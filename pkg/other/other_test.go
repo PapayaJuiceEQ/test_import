@@ -1,7 +1,6 @@
 package other
 
 import (
-	"log"
 	"testing"
 
 	"github.com/PapayaJuiceEQ/test_import/pkg/db"
@@ -10,5 +9,5 @@ import (
 func TestFoo(t *testing.T) {
 	db.IncI()
 	i := db.GetI()
-	log.Print("OTHER:", i)
+	t.Log("OTHER:", i)
 }
