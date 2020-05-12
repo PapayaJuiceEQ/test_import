@@ -8,5 +8,5 @@ import (
 func TestDB(t *testing.T) {
 	IncI()
 	i := GetI()
-	log.Print(i)
+	log.Print("DB:", i)
 }
